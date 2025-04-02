@@ -3,41 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Blog</title>
+    <title>Blog - London is calling</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Mein Blog</h1>
-        <nav>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="main-title">London is calling</h1>
+            <p class="subtitle">Mein London-Tagebuch</p>
+        </div>
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Startseite</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="ueber-mich.html">Über mich</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="blog-uebersicht">
-            <h2>Neueste Artikel</h2>
-            <article>
-                <h3>Erster Blog-Eintrag</h3>
-                <p>Kurze Zusammenfassung des ersten Blog-Eintrags. <a href="blog-eintrag-1.html">Weiterlesen</a></p>
-                <p class="datum">Veröffentlicht am 2. April 2025</p>
+    <main class="site-main">
+        <section class="blog-overview">
+            <h2>Neueste Einträge</h2>
+
+            <article class="blog-post">
+                <h3>Ankunft in London: Erste Impressionen</h3>
+                <p class="date">2. April 2025</p>
+                <p>Die historische Atmosphäre und der moderne Puls dieser Stadt verschmelzen auf faszinierende Weise... [Hier beginnt Ihr Eintrag]</p>
+                <a href="eintraege/ankunft.html" class="read-more">Weiterlesen</a>
             </article>
 
-            <article>
-                <h3>Ein weiteres interessantes Thema</h3>
-                <p>Kurze Zusammenfassung des zweiten Blog-Eintrags. <a href="#">Weiterlesen</a></p>
-                <p class="datum">Veröffentlicht am 1. April 2025</p>
+            <article class="blog-post">
+                <h3>Der Campus des Imperial College: Eine erste Erkundung</h3>
+                <p class="date">3. April 2025</p>
+                <p>Ehrwürdige Gebäude und zukunftsorientierte Forschung – der Campus atmet Geschichte und Innovation... [Hier beginnt Ihr nächster Eintrag]</p>
+                <a href="eintraege/campus.html" class="read-more">Weiterlesen</a>
             </article>
 
             </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Meine Website</p>
+    <footer class="site-footer">
+        <p>&copy; 2025 ICL Calling</p>
     </footer>
 </body>
 </html>

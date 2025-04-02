@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Website</title>
+    <title>London is calling</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Willkommen auf meiner Website</h1>
-        <nav>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="main-title">London is calling</h1>
+            <p class="subtitle">Mein London-Tagebuch</p>
+        </div>
+        <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Startseite</a></li>
+                <li><a href="index.html" class="active">Startseite</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="ueber-mich.html">Über mich</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="hauptinhalt">
-            <h2>Das ist die Startseite</h2>
-            <p>Hier kommt der Hauptinhalt meiner Website hin.</p>
-            <p>Ich werde hier bald interessante Dinge teilen.</p>
+    <main class="start-main">
+        <section class="hero-section">
+            <div class="hero-image"> 
+                <img src="bilder/Imperial_college.jpg">
+            </div>
+            <div class="hero-text">
+                <h2 class="main-title">Willkommen</h2>
+                <p class="Content">Moin Moin. Digga, hier denke ich mir vll noch sinnvollen Text aus</p>
+                <a href="blog.html" class="read-more">Zum Blog</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Meine Website</p>
+    <footer class="site-footer">
+        <p>&copy; 2025 London is Calling</p>
     </footer>
 </body>
 </html>

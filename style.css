@@ -1,49 +1,169 @@
+/* Allgemeines Styling */
 body {
-    font-family: sans-serif;
-    margin: 20px;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Garamond', serif;
+    background-color: #1e1e1e;
+    color: #d4c7b0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+/* Header */
+.site-header {
+    background-color: #2e2b26;
+    color: #eae0d5;
+    padding: 20px;
     text-align: center;
+    border-bottom: 2px solid #8b6f47;
+}
+.header-content h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
-nav ul {
+.subtitle {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #b89b74;
+}
+
+/* Navigation */
+.main-nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0;
 }
 
-nav ul li {
+.main-nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 15px;
 }
 
-nav a {
-    color: white;
+.main-nav a {
+    color: #eae0d5;
     text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
 }
 
-main {
-    padding: 20px 0;
+.main-nav a:hover, .main-nav a.active {
+    color: #b89b74;
+    border-bottom: 2px solid #8b6f47;
 }
 
-#hauptinhalt {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-footer {
+/* Willkommen-Bereich */
+.welcome-section {
     text-align: center;
-    padding: 10px 0;
+    padding: 50px 20px;
+}
+
+.welcome-section h1 {
+    font-size: 2.5em;
+    color: #eae0d5;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    color: #d4c7b0;
+}
+
+.welcome-link {
+    display: inline-block;
     margin-top: 20px;
-    background-color: #333;
-    color: white;
-    font-size: 0.8em;
+    font-size: 1.2em;
+    color: #b89b74;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #8b6f47;
+    transition: color 0.3s;
+}
+
+.welcome-link:hover {
+    color: #eae0d5;
+}
+
+.start-main{
+    padding: 20px;
+    background-color: #2e2b26;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;  /* Füllt die komplette Breite */
+    height: 300px; /* Oder eine gewünschte konstante Höhe */
+    object-fit: cover; /* Schneidet das Bild passend zu */
+}
+
+
+
+/* Blog-Styling */
+.blog-overview h2 {
+    color: #b89b74;
+    font-size: 2em;
+    border-bottom: 1px solid #8b6f47;
+    padding-bottom: 10px;
+}
+
+.blog-post {
+    background-color: #2e2b26;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-left: 4px solid #8b6f47;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h3 {
+    color: #eae0d5;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.blog-post .date {
+    color: #b89b74;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.blog-post p {
+    color: #d4c7b0;
+}
+
+.read-more, .site-footer a {
+    color: #b89b74;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover, .site-footer a:hover {
+    color: #eae0d5;
+}
+
+.blog-title {
+    font-size: 2em;
+    color: #eae0d5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Footer */
+.site-footer {
+    background-color: #2e2b26;
+    color: #b89b74;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #8b6f47;
 }
