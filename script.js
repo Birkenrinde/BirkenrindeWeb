@@ -1,18 +1,5 @@
 const visited = JSON.parse(localStorage.getItem("visitedCountries") || "[]");
 
-// Liste aller Länder, die du in der SVG erwartest
-const countries = [
-  { code: "DE", name: "Deutschland" },
-  { code: "FR", name: "Frankreich" },
-  { code: "IT", name: "Italien" },
-  { code: "US", name: "USA" },
-  { code: "BR", name: "Brasilien" },
-  { code: "JP", name: "Japan" },
-  { code: "EG", name: "Ägypten" },
-  { code: "ZA", name: "Südafrika" }
-  // ... erweitere hier
-];
-
 const countriesList = allIds.map(code => ({ code, name: code }));
 console.log(JSON.stringify(countriesList, null, 2));
 
