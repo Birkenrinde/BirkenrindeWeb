@@ -13,18 +13,8 @@ const countries = [
   // ... erweitere hier
 ];
 
-fetch("world_map.svg")
-  .then(res => res.text())
-  .then(svgText => {
-    document.getElementById("map-container").innerHTML = svgText;
-    
-    // 🆕 ALLE IDs anzeigen
-    const allIds = Array.from(document.querySelectorAll("svg [id]"))
-      .map(el => el.id)
-      .filter(id => /^[A-Z]{2,3}$/.test(id)); // Nur Länder-Codes (2–3 Großbuchstaben)
-
-    console.log("Alle Länder-IDs:", allIds);
-  });
+const countriesList = allIds.map(code => ({ code, name: code }));
+console.log(JSON.stringify(countriesList, null, 2));
 
 
 // SVG laden
